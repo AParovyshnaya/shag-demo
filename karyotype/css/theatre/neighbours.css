@@ -1,0 +1,45 @@
+div.neighbours {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	gap: 0.5rem;
+}
+
+.neighbours button {
+	font: inherit;
+	color: #FFC482;
+	background-color: #080C0C;
+	padding: .4rem .5rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	outline: 2px solid transparent;
+	transition: outline 0.5s ease-out;
+}
+
+.neighbours button[data-direction="from"]::before {
+	content: "←";
+	padding: 0 0.4rem 0 0;
+}
+
+.neighbours button[data-direction="to"]::after {
+	content: "→";
+	padding: 0 0 0 0.4rem;
+}
+
+/*direction (from or to) by DOM place reason as ::after element*/
+
+.neighbours button:focus {
+	background-color: #314947;
+	outline-color: #FFC482;
+}
+
+.neighbours button:focus-visible {
+	background-color: #314947;
+	outline-color: #FFC482;
+}
+
+
+.neighbours button:disabled {
+	color: #FFF5EB;
+	cursor: no-drop;
+}

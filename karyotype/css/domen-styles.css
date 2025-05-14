@@ -1,0 +1,24 @@
+.actor {
+	grid-template-areas:
+	"image image"
+	"name name"
+	"chromosome-group chromosome-group";
+}
+
+.actor .chromosome_group {
+	grid-area: chromosome-group;
+	background-color: #6320EE;
+	color: white;
+	align-content: center;
+	padding: 0 0.5rem;
+}
+
+.actor .image {
+	grid-area: image;
+	align-content: center;
+	padding: 0 0.5rem;
+}
+
+img {
+	height: 5rem;
+}

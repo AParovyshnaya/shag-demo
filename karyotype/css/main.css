@@ -1,0 +1,46 @@
+html {
+	--select-yellow: #F0EC57;
+}
+
+html,
+body {
+	min-width: 100vw;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+	gap: 1rem;
+	scroll-behavior: smooth;
+}
+
+header {
+	padding-left: 1rem;
+}
+
+main {
+	padding-left: 1rem;
+	padding-right: 0.5rem;
+}
+
+article {
+	margin-top: 2rem;
+	flex: 1 1 0;
+}
+
+img {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

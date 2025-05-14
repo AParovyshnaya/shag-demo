@@ -1,0 +1,22 @@
+.map {
+	font-family: "Noto Sans Mono", "Consolas", "Monaco", monospace;
+	align-self: center;
+	box-sizing: border-box;
+
+	display: grid;
+	--columns: 1;
+	--rows: 1;
+	--areas: "";
+	grid-template-columns: repeat(auto-fit, 1fr);
+	grid-template-rows: repeat(auto-fit, 1fr);
+	grid-template-areas: var(--areas);
+	justify-items: stretch;
+	align-items: stretch;
+
+	padding: 0.25rem;
+}
+
+#map>div {
+	align-self: center;
+	justify-self: center;
+}

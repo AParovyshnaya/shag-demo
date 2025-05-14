@@ -1,0 +1,79 @@
+.description {
+	flex: 1 0 30vw;
+	padding: 0.5rem 2rem;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	gap: .5rem;
+	
+	font-size: larger;
+}
+
+@media (min-width: 800px) {
+	.description {
+		max-width: 40vw;
+	}
+}
+
+.description h3 a {
+	color: #2C423F;
+}
+
+.description .participants {
+	font-size: 14pt;
+	align-self: center;
+	line-height: 200%;
+}
+
+.description .participants a {
+	padding: .25rem .25rem;
+}
+
+.description .participants span span {
+	margin: 0 0.1rem;
+}
+
+.description .participants #from[data-empty=false] + #to[data-empty=false]::before{
+	content: "→";
+	margin: 0 0.5rem;
+}
+
+.description .participants #from[data-empty=true] + #to[data-empty=false]::before{
+	content: ":";
+	margin-left: 0;
+	margin-right: 0.5rem;
+}
+
+.description .participants #from a {
+	background-color: #2C423F;
+	color: #F9F4F5;
+}
+
+.description .participants #to a {
+	background-color: #9BF3F0;
+	color: #2C423F;
+}
+
+.description .genchanging {
+	line-height: 200%;
+}
+
+.description .genchanging span {
+	--border: #5B7553;
+	border: solid var(--border) 1px;
+	padding: .25rem;
+	margin-left: .25rem;
+}
+
+.description .genchanging span[data-value=false] {
+	--border: #FF3C38;
+}
+
+.description .genchanging span[data-value=false]::after {
+	content: "❌ нет";
+}
+
+.description .genchanging span[data-value=true]::after {
+	content: "✔ да";
+}

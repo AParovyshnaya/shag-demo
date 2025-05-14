@@ -1,0 +1,654 @@
+{
+  "eClass" : "http:/shag.com/theatre#//Theatre",
+  "tree" : {
+    "start" : {
+      "eClass" : "http:/shag.com/theatre#//Scene",
+      "$ref" : "scene_normal_karyotype"
+    }
+  },
+  "scenes" : [ {
+    "id" : "scene_normal_karyotype",
+    "name" : "Кариограмма здорового мужчины",
+    "libretto" : {
+      "text" : "<p> Хромосомы — плотные упаковки информации. Их видно только при делении клетки. Иногда пакеты рвутся (делеция), меняются частями (транслокация), неправильно распределяются при делении (анеуплодия: лишние или недостающие хромосомы). Когда хромосомы изменяются в гаметах или в зародыше, организм развивается ненормально. </p> <p> Если гамета изменила генетический набор, то изменится весь организм ребёнка. Сперматозиды с аномальным кариотипом не выживают, а яйцеклетки могут сохранить мутацию. Поэтому при планировании беременности следят за возрастом матери, а не отца. </p> <p> Если мутировал зародыш, то ребёнок будет мозаичным — у некоторых клеток генетический набор будет отличаться от остальных. </p>",
+      "tempers" : [ {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      } ]
+    },
+    "troupe" : {
+      "heroes" : [ {
+        "id" : "hero_ch_01",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_01"
+        },
+        "alignment" : { }
+      }, {
+        "id" : "hero_ch_02",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_02"
+        },
+        "alignment" : {
+          "x" : 1
+        }
+      }, {
+        "id" : "hero_ch_03",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_03"
+        },
+        "alignment" : {
+          "x" : 2
+        }
+      }, {
+        "id" : "hero_ch_04",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_04"
+        },
+        "alignment" : {
+          "x" : 4
+        }
+      }, {
+        "id" : "hero_ch_05",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_05"
+        },
+        "alignment" : {
+          "x" : 5
+        }
+      }, {
+        "id" : "hero_ch_06",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_06"
+        },
+        "alignment" : {
+          "y" : 1
+        }
+      }, {
+        "id" : "hero_ch_07",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_07"
+        },
+        "alignment" : {
+          "x" : 1,
+          "y" : 1
+        }
+      }, {
+        "id" : "hero_ch_08",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_08"
+        },
+        "alignment" : {
+          "x" : 2,
+          "y" : 1
+        },
+        "skills" : [ {
+          "title" : "Трисомия (синдром Варкани)",
+          "function" : "trysomy8"
+        } ]
+      }, {
+        "id" : "hero_ch_09",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_09"
+        },
+        "alignment" : {
+          "x" : 3,
+          "y" : 1
+        }
+      }, {
+        "id" : "hero_ch_10",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_10"
+        },
+        "alignment" : {
+          "x" : 4,
+          "y" : 1
+        }
+      }, {
+        "id" : "hero_ch_11",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_11"
+        },
+        "alignment" : {
+          "x" : 5,
+          "y" : 1
+        }
+      }, {
+        "id" : "hero_ch_12",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_12"
+        },
+        "alignment" : {
+          "x" : 6,
+          "y" : 1
+        }
+      }, {
+        "id" : "hero_ch_13",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_13"
+        },
+        "alignment" : {
+          "y" : 2
+        },
+        "skills" : [ {
+          "title" : "Трисомия (синдром Патау)",
+          "function" : "trysomy13"
+        } ]
+      }, {
+        "id" : "hero_ch_14",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_14"
+        },
+        "alignment" : {
+          "x" : 1,
+          "y" : 2
+        }
+      }, {
+        "id" : "hero_ch_15",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_15"
+        },
+        "alignment" : {
+          "x" : 2,
+          "y" : 2
+        }
+      }, {
+        "id" : "hero_ch_16",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_16"
+        },
+        "alignment" : {
+          "x" : 4,
+          "y" : 2
+        }
+      }, {
+        "id" : "hero_ch_17",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_17"
+        },
+        "alignment" : {
+          "x" : 5,
+          "y" : 2
+        }
+      }, {
+        "id" : "hero_ch_18",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_18"
+        },
+        "alignment" : {
+          "x" : 6,
+          "y" : 2
+        },
+        "skills" : [ {
+          "title" : "Трисомия (синдром Эдвардса)",
+          "function" : "trysomy18"
+        } ]
+      }, {
+        "id" : "hero_ch_19",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_19"
+        },
+        "alignment" : {
+          "x" : 1,
+          "y" : 3
+        }
+      }, {
+        "id" : "hero_ch_20",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_20"
+        },
+        "alignment" : {
+          "x" : 2,
+          "y" : 3
+        }
+      }, {
+        "id" : "hero_ch_21",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_21"
+        },
+        "alignment" : {
+          "x" : 4,
+          "y" : 3
+        },
+        "skills" : [ {
+          "title" : "Трисомия (синдром Дауна)",
+          "function" : "trysomy21"
+        } ]
+      }, {
+        "id" : "hero_ch_22",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_22"
+        },
+        "alignment" : {
+          "x" : 5,
+          "y" : 3
+        }
+      }, {
+        "id" : "hero_ch_23",
+        "actor" : {
+          "eClass" : "http:/shag.com/theatre#//Actor",
+          "$ref" : "chromosome_22"
+        },
+        "alignment" : {
+          "x" : 5,
+          "y" : 3
+        }
+      } ]
+    },
+    "grid" : {
+      "columns" : 7,
+      "rows" : 4
+    }
+  } ],
+  "actors" : [ {
+    "id" : "chromosome_01",
+    "name" : "1-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_01.gif"
+      },
+      "description" : "1-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "A"
+    } ]
+  }, {
+    "id" : "chromosome_02",
+    "name" : "2-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_02.gif"
+      },
+      "description" : "2-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "A"
+    } ]
+  }, {
+    "id" : "chromosome_03",
+    "name" : "3-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_03.gif"
+      },
+      "description" : "3-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "A"
+    } ]
+  }, {
+    "id" : "chromosome_04",
+    "name" : "4-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_04.gif"
+      },
+      "description" : "4-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "B"
+    } ]
+  }, {
+    "id" : "chromosome_05",
+    "name" : "5-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_05.gif"
+      },
+      "description" : "5-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "B"
+    } ]
+  }, {
+    "id" : "chromosome_06",
+    "name" : "6-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_06.gif"
+      },
+      "description" : "6-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_07",
+    "name" : "7-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_07.gif"
+      },
+      "description" : "7-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_08",
+    "name" : "8-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_08.gif"
+      },
+      "description" : "8-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_09",
+    "name" : "9-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_09.gif"
+      },
+      "description" : "9-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_10",
+    "name" : "10-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_10.gif"
+      },
+      "description" : "10-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_11",
+    "name" : "11-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_11.gif"
+      },
+      "description" : "11-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_12",
+    "name" : "12-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_12.gif"
+      },
+      "description" : "12-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "C"
+    } ]
+  }, {
+    "id" : "chromosome_13",
+    "name" : "13-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_13.gif"
+      },
+      "description" : "13-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "D"
+    } ]
+  }, {
+    "id" : "chromosome_14",
+    "name" : "14-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_14.gif"
+      },
+      "description" : "14-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "D"
+    } ]
+  }, {
+    "id" : "chromosome_15",
+    "name" : "15-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_15.gif"
+      },
+      "description" : "15-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "D"
+    } ]
+  }, {
+    "id" : "chromosome_16",
+    "name" : "16-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_16.gif"
+      },
+      "description" : "16-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "E"
+    } ]
+  }, {
+    "id" : "chromosome_17",
+    "name" : "17-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_17.gif"
+      },
+      "description" : "17-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "E"
+    } ]
+  }, {
+    "id" : "chromosome_18",
+    "name" : "18-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_18.gif"
+      },
+      "description" : "18-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "E"
+    } ]
+  }, {
+    "id" : "chromosome_19",
+    "name" : "19-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_19.gif"
+      },
+      "description" : "19-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "F"
+    } ]
+  }, {
+    "id" : "chromosome_20",
+    "name" : "20-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_20.gif"
+      },
+      "description" : "20-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "F"
+    } ]
+  }, {
+    "id" : "chromosome_21",
+    "name" : "21-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_21.gif"
+      },
+      "description" : "21-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "G"
+    } ]
+  }, {
+    "id" : "chromosome_22",
+    "name" : "22-я хромосома",
+    "image" : {
+      "path" : {
+        "path" : "/images/chromosome_22.gif"
+      },
+      "description" : "22-хромосома. Она состоит из двух хроматид. На фотографии они не связаны центромерой.",
+      "source" : "https://upload.wikimedia.org/wikipedia/commons/5/53/NHGRI_human_male_karyotype.png"
+    },
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "G"
+    } ]
+  }, {
+    "id" : "chromosome_23",
+    "name" : "23-я хромосома",
+    "character" : [ {
+      "pattern" : {
+        "eClass" : "http:/shag.com/theatre#//Temper",
+        "$ref" : "chromosome_group"
+      },
+      "value" : "G"
+    } ]
+  } ],
+  "tempers" : [ {
+    "id" : "chromosome_group",
+    "name" : "Группа хромосом",
+    "type" : "String"
+  } ]
+}

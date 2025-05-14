@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Схема «Шаг»</title>
+
+	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+
+	<link rel="stylesheet" href="css/theatre/map.css">
+	<!--do not move "map.css". Look to ./js/layout/layout.js:deploy-->
+	
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="css/backyard/footer.css">
+	<link rel="stylesheet" href="css/backyard/scrollbar.css">
+
+	<link rel="stylesheet" href="css/theatre/hero.css">
+	<link rel="stylesheet" href="css/theatre/images.css">
+	<link rel="stylesheet" href="css/theatre/libretto.css">
+	<link rel="stylesheet" href="css/theatre/neighbours.css">
+	<link rel="stylesheet" href="css/theatre/scene.css">
+	<link rel="stylesheet" href="css/theatre/skills.css">
+	<link rel="stylesheet" href="css/theatre/theatre.css">
+
+	<!--here will be all domen-specific css code-->
+	<link rel="newest stylesheet" href="css/domen-styles.css">
+
+</head>
+
+<body>
+	<main>
+		<article class="schema">
+			<section class="action">
+				<div class="map" id="map">
+				</div>
+				<div class="neighbours from" id="neighbours_from">
+				</div>
+				<div class="neighbours to" id="neighbours_to">
+				</div>
+				<script type="module">
+					import {start} from "./js/find/start.js";
+					import {oversee} from "./js/observe/oversee.js";
+					import {scene} from "./js/observe/scene.js";
+					import {destroy} from "./js/knead/stage.js";
+					destroy();
+					let data;
+					fetch("../js/data/data.json")
+						.then(responce => responce.json())
+						.then(json => data = json)
+						.then(() => {
+							oversee(data);
+							scene(data, start(data));
+						});
+				</script>
+			</section>
+			<section class="description" id="libretto">
+				<h3 id="scene_header"></h3>
+				<div id="description"></div>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<div class="copyrights"> © 2024, 2025 <a href="https://github.com/AParovyshnaya">Anastasiia Parovyshnaia</a>.
+		</div>
+	</footer>
+</body>
+
+</html>

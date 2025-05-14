@@ -1,0 +1,78 @@
+.hero {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.actor {
+	max-height: 100%;
+	max-width: 100%;
+
+	display: grid;
+	grid-template-columns: [hat] min-content [image] max-content;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"name name";
+	grid-gap: 0;
+}
+
+.actor div {
+	text-align: center;
+}
+
+.actor > div {
+	align-content: center;
+	padding: 0.5rem 0;
+}
+
+.actor .name {
+	grid-area: name;
+	background-color: #9BF3F0;
+	align-content: center;
+	padding: 0.5rem 0;
+}
+
+.actor div[grid-area] {
+	background-color: #6320EE;
+	color: white;
+	align-content: center;
+	padding: 0 0.5rem;
+}
+
+.hero {
+	border: 2px solid transparent;
+	outline: 2px solid transparent;
+	transition: all 0.5s ease-in-out;
+}
+
+.hero:hover, .hero:focus {
+	transition: border 200ms ease-in-out;
+	border-color: #6320EE;
+}
+
+.hero:target {
+	animation: 1s ease-in 2 dash forwards;
+}
+
+.hero:target:hover {
+	transition: border 200ms ease-in-out;
+	border-color: var(--select-yellow);
+	outline-color: var(--select-yellow);
+}
+
+@keyframes dash {
+	0% {
+		border-color: var(--select-yellow);
+		outline-color: var(--select-yellow);
+	}
+
+	50% {
+		border-color: transparent;
+		outline-color: transparent;
+	}
+
+	100% {
+		border-color: var(--select-yellow);
+		outline-color: var(--select-yellow);
+	}
+}

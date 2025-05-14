@@ -1,0 +1,28 @@
+div.context_menu {
+	position: absolute;
+	background-color: #FAE99E;
+}
+
+div.context_menu ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: .5rem;
+}
+
+.context_menu li {
+	padding: 0.5rem;
+}
+
+.context_menu li.empty {
+	background-color: #F5F5F5;
+}
+
+.context_menu li:hover:not(.empty) {
+	background-color: #ECC30B;
+}
+
+.context_menu li::marker {
+	content: "";
+}
